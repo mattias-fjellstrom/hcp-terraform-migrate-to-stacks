@@ -5,14 +5,6 @@ terraform {
       version = "4.52.0"
     }
   }
-
-  cloud {
-    organization = "mattias-fjellstrom"
-
-    workspaces {
-      name = "source-workspace"
-    }
-  }
 }
 
 provider "azurerm" {
