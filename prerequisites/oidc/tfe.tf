@@ -47,6 +47,8 @@ resource "tfe_project" "default" {
 resource "tfe_workspace" "default" {
   name       = local.source_workspace
   project_id = tfe_project.default.id
+
+  force_delete = true
 }
 
 resource "tfe_variable" "location" {
